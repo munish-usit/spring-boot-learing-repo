@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.learning</groupId>
-	<artifactId>learning-demo-service</artifactId>
+	<artifactId>learning-college-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>learning-demo-service</name>
+	<name>learning-college-service</name>
 	<description>Learning Spring Boot Project</description>
 	<properties>
 		<java.version>11</java.version>
@@ -43,12 +43,6 @@
     <dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-		
-			<!-- feign -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 
     <dependency>

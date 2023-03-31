@@ -18,16 +18,15 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(
-		name = "student"
+		name = "college"
 )
-public class Student {
+public class College {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long studentId;
-	private String firstName;
-	private String lastName;
-	private String emailId;
 	private Long collegeId;
+	private String collegeName;
+	private String collegeAddress;
+	private String collegeEmailId;
 	
 }
