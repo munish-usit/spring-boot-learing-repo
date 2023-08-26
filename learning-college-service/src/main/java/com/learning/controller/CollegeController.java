@@ -34,4 +34,5 @@ public class CollegeController {
 		College college2 = collegeService.addCollege(college);
 		return ResponseEntity.ok(college2);
 	}
+	
 }

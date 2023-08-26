@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: college-svc
+  namespace: default
+spec:
+  ports:
+  - nodePort: 30085
+    port: 8083
+    targetPort: 8083
+  selector:
+    app: college
+  type: NodePort

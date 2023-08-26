@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.learning</groupId>
-	<artifactId>learning-demo-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>learning-demo-service</name>
+	<artifactId>learning-student-service</artifactId>
+	<version>1.0.0.1</version>
+	<name>learning-student-service</name>
 	<description>Learning Spring Boot Project</description>
 	<properties>
 		<java.version>11</java.version>

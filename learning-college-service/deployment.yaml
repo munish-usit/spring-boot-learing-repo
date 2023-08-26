@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: college
+  labels:
+    app: college
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: college
+  template:
+    metadata:
+      labels:
+        app: college
+    spec:
+      volumes:
+        - name: college-volume
+          configMap:
+            name: college-configmap
+      
+      containers:
+        - name: college-container
+          image: college:latest
+          imagePullPolicy: Never   # this is done so that image is fetched locally
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: prod
+            - name: SPRING_DATASOURCE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                    key: password
+                    name: college-secret-config
+          volumeMounts:
+            - name: college-volume
+              mountPath: /microservices/config
+        

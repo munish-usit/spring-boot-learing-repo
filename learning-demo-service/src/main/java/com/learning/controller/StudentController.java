@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.learning.model.Student;
-import com.learning.model.User;
 import com.learning.service.StudentService;
 
 import lombok.extern.slf4j.Slf4j;

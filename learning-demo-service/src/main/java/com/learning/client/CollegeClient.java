@@ -39,7 +39,7 @@ class CollegeServiceFallback implements CollegeClient {
 
 	@Override
 	public College getCollege(Long collegeId) {
-		log.error("error in colelge api");
+		log.error("error in colelge api",cause);
 		return new College();
 	}
 	
