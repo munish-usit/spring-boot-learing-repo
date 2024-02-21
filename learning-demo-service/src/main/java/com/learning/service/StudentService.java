@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.learning.client.CollegeClient;
 import com.learning.model.College;
 import com.learning.model.Student;
-import com.learning.repository.StudentRepository;
+import com.learning.repository.CollegeRepository;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -17,7 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 public class StudentService {
 
 	@Autowired
-	private StudentRepository studentRepository;
+	private CollegeRepository studentRepository;
 	
 	@Autowired
 	private CollegeClient collegeClient;

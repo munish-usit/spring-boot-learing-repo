@@ -1,5 +1,6 @@
 package com.learning.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,9 +25,17 @@ public class College {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="college_id")
 	private Long collegeId;
+	@Column(name="college_name")
 	private String collegeName;
+	@Column(name="college_address")
 	private String collegeAddress;
+	@Column(name="college_email_id")
 	private String collegeEmailId;
+	@Column(name="college_city")
+	private String collegeCity;
+	@Column(name="college_active")
+	private String collegeActive;
 	
 }

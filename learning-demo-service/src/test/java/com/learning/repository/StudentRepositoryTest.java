@@ -12,7 +12,7 @@ import com.learning.model.Student;
 public class StudentRepositoryTest {
 
 	@Autowired
-	private StudentRepository studentRepository;
+	private CollegeRepository studentRepository;
 
 	@Test
 	public void saveStudent() {
